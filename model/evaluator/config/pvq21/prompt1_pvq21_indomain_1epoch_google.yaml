@@ -1,0 +1,78 @@
+# default_config.yaml
+
+###################################################
+# Almost never need to change for all experiments #
+###################################################
+
+huggingface:
+  token: "your_token"
+
+
+model:
+  base_model: "meta-llama/Meta-Llama-3-8B-Instruct"
+
+quantization:
+  load_in_4bit: true
+  bnb_4bit_quant_type: "nf4"
+  bnb_4bit_use_double_quant: false
+
+peft:
+  lora_alpha: 16
+  lora_dropout: 0.1
+  r: 64
+  bias: "none"
+  task_type: "CAUSAL_LM"
+  target_modules: 
+    - "q_proj"
+    - "v_proj"
+## target_modules is now default setting of llama3 -> maybe expand to other modules -> e.g. q,k,v,o attention modules and also MLP modules gate up down
+
+
+########################################
+# Should be change for each experiment #
+########################################
+
+training_args:
+  output_dir: "./checkpoints/llama3-8b-sft-full-data-prompt1-pvq21-google" ## output directory for saving trainer state and checkpoint
+  num_train_epochs: 1
+  do_eval: false
+  # evaluation_strategy: "steps"
+  # eval_steps: 900
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 32
+  gradient_accumulation_steps: 8
+  optim: "paged_adamw_8bit"
+  warmup_ratio: 0.1 ## warmup ratio changed
+  learning_rate: 2.0e-4
+  bf16: true ## bf16 is now default setting of our GPU
+  logging_steps: 100
+  logging_strategy: "steps"
+  push_to_hub: false
+  report_to: "wandb"
+  save_steps: 900
+  save_total_limit: 1 ## only save the last checkpoint
+  seed: 42
+
+wandb:
+  project: "llama3-8b-sft-full-data"
+  entity: "your_entity"
+  run_name: "llama3-8b-sft-full-data-prompt1-pvq21-1epoch-google"
+
+inference:
+  batch_size: 32
+
+process:
+  process_name: "llama3-8b-sft-full-data-prompt1-pvq21-1epoch-google"
+
+path:
+  train_dataset_path: "../data/pvq21/google/train_data_prompt1_pvq21_google.json"
+  eval_dataset_path: "../data/pvq21/google/eval_data_prompt1_pvq21_google.json"
+  test_dataset_path: "../data/pvq21/google/test_data_prompt1_pvq21_google.json"
+  output_csv_dir: "./output_csv_results/pvq21/google"
+  output_csv_filename: "llama3-8b-sft-full-data-prompt1-pvq21-google-1epoch.csv"
+  save_model_path: "output_models/pvq21/google/llama3-8b-sft-full-data-prompt1-pvq21-google-1epoch"
+
+data_process:
+  max_seq_length: 768
+  dataset_type: "value"
+  response_template: "### Response:" ## almost never need to change
