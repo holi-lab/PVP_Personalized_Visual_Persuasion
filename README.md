@@ -73,6 +73,10 @@ The upper figure shows two examples from the dataset.
 A distinctive feature of our dataset is the utilization of **nine persuasion strategies** based on **theoretical frameworks** (e.g., gain frame: depicting a positive consequence of the target behavior). To ensure that these strategies are effectively reflected in the images, we employed a **novel image generation method using DALLE** and additionally sourced images via **Google Image Search**.
 
 Furthermore, recognizing that the characteristics of viewers play a crucial role in persuasion effectiveness, we collected **persuasiveness scores** for the images, along with annotators’ **demographic information, habits, personality traits (Big 5 personality traits, Goldberg, 2013), and values (Schwartz, 2012; Graham et al., 2013).**
+
+You can get our datasets via this [Google Drive](https://drive.google.com/drive/u/0/folders/1h_OQhtCUkpyMy82o6VDR8_PXiYpZ0uX1).
+
+
 # 💾 Installation
 
 ## Prepare the Environment File
@@ -85,6 +89,8 @@ Sample `.env` file containing private information:
 OPENAI_API_KEY='your-api-key-here'"
 ```
 OPENAI_API_KEY is the OpenAI API key. You can get it from the [OpenAI](https://platform.openai.com/api-keys).
+
+
 
 
 ## Setup
@@ -246,8 +252,11 @@ Our experiments reveal that incorporating psychological characteristics enhances
 
 Please cite our paper if you use the code or data in this repository.
 ```
-@article{
-   
+@inproceedings{kim-etal-2025-pvp,
+   title = "{PVP}: An Image Dataset for Personalized Visual Persuasion with Persuasion Strategies, Viewer Characteristics, and Persuasiveness Ratings",
+   author = "Kim, Junseo and Han, Jongwook and Choi, Dongmin and Yoon, Jongwook and Lee, Eun-Ju and Jo, Yohan",
+   booktitle={ACL},
+   year={2025}
 }
 ```
 
