@@ -74,7 +74,7 @@ A distinctive feature of our dataset is the utilization of **nine persuasion str
 
 Furthermore, recognizing that the characteristics of viewers play a crucial role in persuasion effectiveness, we collected **persuasiveness scores** for the images, along with annotators’ **demographic information, habits, personality traits (Big 5 personality traits, Goldberg, 2013), and values (Schwartz, 2012; Graham et al., 2013).**
 
-You can get our datasets via this [Google Drive](https://drive.google.com/drive/u/0/folders/1h_OQhtCUkpyMy82o6VDR8_PXiYpZ0uX1).
+<!-- You can get our datasets via this [Google Drive](https://drive.google.com/drive/u/0/folders/1h_OQhtCUkpyMy82o6VDR8_PXiYpZ0uX1). -->
 
 
 # 💾 Installation
