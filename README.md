@@ -75,7 +75,7 @@ Furthermore, recognizing that the characteristics of viewers play a crucial role
 
 ### CSV Column Descriptions
 
-The csv_files directory contains train_paper, eval_paper, and test_paper, which are the files used in this study to train, evaluate, and test the model.
+The <code>csv_files</code> directory contains <code>train_paper</code>, <code>eval_paper</code>, and <code>test_paper</code>, which are the files used in this study to train, evaluate, and test the model.
 
 <ul>
   <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator.</li>
