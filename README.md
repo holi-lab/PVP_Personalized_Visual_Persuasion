@@ -87,7 +87,7 @@ Furthermore, recognizing that the characteristics of viewers play a crucial role
   <li><strong><code>Image_Num</code></strong>: Index of the image within the message.</li>
   <li><strong><code>Query</code></strong>: Text description for generating the image.</li>
   <li><strong><code>Strategy</code></strong>: Persuasive strategy used.</li>
-  <li><strong><code>Method</code></strong>: Image generation method (e.g., <code>dalle</code>, <code>google</code>).</li>
+  <li><strong><code>Method</code></strong>: Image generation method (<code>dalle</code>, <code>google</code>).</li>
   <li><strong><code>Pos_Neg</code></strong>: Framing of the message (<code>pos</code> = positive framing; <code>neg</code> = negative framing).</li>
   <li><strong><code>Premise</code></strong>: Premise used to instantiate the persuasive strategy.</li>
   <li><strong><code>Score</code></strong>: Persuasiveness score assigned by the annotator (0–10).</li>
