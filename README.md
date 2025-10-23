@@ -66,13 +66,54 @@ Meanwhile, check out our [latest paper](https://arxiv.org/pdf/2506.00481) to exp
 
 ![](assets/Dalle_Google_Example.png)
 
-
 </div>
 The upper figure shows two examples from the dataset.
 
 A distinctive feature of our dataset is the utilization of **nine persuasion strategies** based on **theoretical frameworks** (e.g., gain frame: depicting a positive consequence of the target behavior). To ensure that these strategies are effectively reflected in the images, we employed a **novel image generation method using DALLE** and additionally sourced images via **Google Image Search**.
 
 Furthermore, recognizing that the characteristics of viewers play a crucial role in persuasion effectiveness, we collected **persuasiveness scores** for the images, along with annotators’ **demographic information, habits, personality traits (Big 5 personality traits, Goldberg, 2013), and values (Schwartz, 2012; Graham et al., 2013).**
+
+### CSV Column Descriptions
+<ul>
+  <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator.</li>
+  <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female).</li>
+  <li><strong><code>Age</code></strong>: Annotator’s age (years).</li>
+  <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Values, and psychological traits (Big 5 personality traits and Moral Foundations) of the annotator.</li>
+  <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not).</li>
+  <li><strong><code>Topic</code></strong>: Topic category the image belongs to.</li>
+  <li><strong><code>Message</code></strong>: The persuasive message conveyed by the image.</li>
+  <li><strong><code>Message_ID</code></strong>: Unique identifier for the message.</li>
+  <li><strong><code>Annotator_ID_by_Message</code></strong>: Per-message annotator index. For example, if a message lists annotator IDs <code>0</code>–<code>3</code>, four different annotators labeled that message.</li>
+  <li><strong><code>Image_Num</code></strong>: Index of the image within the message.</li>
+  <li><strong><code>Query</code></strong>: Text description for generating the image.</li>
+  <li><strong><code>Strategy</code></strong>: Persuasive strategy used.</li>
+  <li><strong><code>Method</code></strong>: Image generation method (e.g., <code>dalle</code>, <code>google</code>).</li>
+  <li><strong><code>Pos_Neg</code></strong>: Framing of the message (<code>pos</code> = positive framing; <code>neg</code> = negative framing).</li>
+  <li><strong><code>Premise</code></strong>: Premise used to instantiate the persuasive strategy.</li>
+  <li><strong><code>Score</code></strong>: Persuasiveness score assigned by the annotator (0–10).</li>
+</ul>
+
+### Image Folder Structure
+<p>
+  Each image folder is named exactly as the CSV value in <code>Message</code>. Inside that folder,
+  images are saved using <code>Image_Num</code> as the filename.
+</p>
+
+<p><strong>Path convention:</strong> <code>image_files/&lt;Message&gt;/&lt;Image_Num&gt;.jpg</code></p>
+
+<pre><code>image_files/
+├─ Do_not_listen_to_music_while_studying/
+│  ├─ 1.jpg
+│  └─ 2.jpg
+└─ Get_a_health_check_up_regularly/
+   ├─ 1.jpg
+   └─ 2.jpg
+</code></pre>
+
+<p>
+  Use the pair <code>(Message, Image_Num)</code> from the CSV to locate the corresponding image file.
+</p>
+
 
 <!-- You can get our datasets via this [Google Drive](https://drive.google.com/drive/u/0/folders/1h_OQhtCUkpyMy82o6VDR8_PXiYpZ0uX1). -->
 
