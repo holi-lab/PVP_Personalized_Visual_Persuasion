@@ -74,6 +74,9 @@ A distinctive feature of our dataset is the utilization of **nine persuasion str
 Furthermore, recognizing that the characteristics of viewers play a crucial role in persuasion effectiveness, we collected **persuasiveness scores** for the images, along with annotators’ **demographic information, habits, personality traits (Big 5 personality traits, Goldberg, 2013), and values (Schwartz, 2012; Graham et al., 2013).**
 
 ### CSV Column Descriptions
+
+The csv_files directory contains train_paper, eval_paper, and test_paper, which are the files used in this study to train, evaluate, and test the model.
+
 <ul>
   <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator.</li>
   <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female).</li>
