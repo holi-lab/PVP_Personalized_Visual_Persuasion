@@ -81,7 +81,7 @@ The <code>csv_files</code> directory contains <code>train_paper</code>, <code>ev
   <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator.</li>
   <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female).</li>
   <li><strong><code>Age</code></strong>: Annotator’s age (years).</li>
-  <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Values, and psychological traits (Big 5 personality traits and Moral Foundations) of the annotator.</li>
+  <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Psychological traits (Schwartz Theory of Basic Values, Big 5 personality traits, and Moral Foundations) of the annotator.</li>
   <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not).</li>
   <li><strong><code>Topic</code></strong>: Topic category the image belongs to.</li>
   <li><strong><code>Message</code></strong>: The persuasive message conveyed by the image.</li>
