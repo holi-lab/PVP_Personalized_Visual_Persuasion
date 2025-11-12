@@ -78,22 +78,23 @@ Furthermore, recognizing that the characteristics of viewers play a crucial role
 The <code>csv_files</code> directory contains <code>train_paper</code>, <code>eval_paper</code>, and <code>test_paper</code>, which are the files used in this study to train, evaluate, and test the model.
 
 <ul>
-  <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator.</li>
-  <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female).</li>
-  <li><strong><code>Age</code></strong>: Annotator’s age (years).</li>
-  <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Psychological traits (Schwartz Theory of Basic Values, Big 5 personality traits, and Moral Foundations) of the annotator.</li>
-  <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not).</li>
-  <li><strong><code>Topic</code></strong>: Topic category the image belongs to.</li>
-  <li><strong><code>Message</code></strong>: The persuasive message conveyed by the image.</li>
-  <li><strong><code>Message_ID</code></strong>: Unique identifier for the message.</li>
+  <li><strong><code>Annotator_ID</code></strong>: Globally unique identifier for the annotator</li>
+  <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female)</li>
+  <li><strong><code>Age</code></strong>: Annotator’s age (years)</li>
+  <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Psychological traits (Schwartz Theory of Basic Values, Big 5 personality traits, and Moral Foundations) of the annotator</li>
+  <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not) (e.g. For the message 'Do not litter while walking', a 'Yes' habit indicates that the annotator usually does not litter while walking.)</li>
+  <li><strong><code>Topic</code></strong>: Topic category the image belongs to</li>
+ <li><strong><code>Message_ID</code></strong>: Unique identifier for the message.</li>
+  <li><strong><code>Message</code></strong>: The persuasive message conveyed by the image</li>
   <li><strong><code>Annotator_ID_by_Message</code></strong>: Per-message annotator index. For example, if a message lists annotator IDs <code>0</code>–<code>3</code>, four different annotators labeled that message.</li>
-  <li><strong><code>Image_Num</code></strong>: Index of the image within the message.</li>
-  <li><strong><code>Query</code></strong>: Text description for generating the image.</li>
-  <li><strong><code>Strategy</code></strong>: Persuasive strategy used.</li>
-  <li><strong><code>Method</code></strong>: Image generation method (<code>dalle</code>, <code>google</code>).</li>
-  <li><strong><code>Pos_Neg</code></strong>: Framing of the message (<code>pos</code> = positive framing; <code>neg</code> = negative framing).</li>
-  <li><strong><code>Premise</code></strong>: Premise used to instantiate the persuasive strategy.</li>
-  <li><strong><code>Score</code></strong>: Persuasiveness score assigned by the annotator (0–10).</li>
+  <li><strong><code>Image_Num</code></strong>: Index of the image within the message</li>
+  <li><strong><code>Strategy</code></strong>: Persuasive strategy used</li>
+  <li><strong><code>Method</code></strong>: Image generation method (<code>dalle</code>, <code>google</code>)</li>
+  <li><strong><code>Pos_Neg</code></strong>: Framing of the message (<code>pos</code> = positive framing; <code>neg</code> = negative framing)</li>
+  <li><strong><code>Premise</code></strong>: Premise used to instantiate the persuasive strategy</li>
+  <li><strong><code>Query</code></strong>: Text prompt used to generate the image for dalle method and keywords to search the image for google method</li>
+  <li><strong><code>Description</code></strong>: Text description of the image</li>
+  <li><strong><code>Score</code></strong>: Persuasiveness score assigned by the annotator (0–10)</li>
 </ul>
 
 ### Image Folder Structure
