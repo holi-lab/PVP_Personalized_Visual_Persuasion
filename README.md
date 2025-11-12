@@ -82,7 +82,7 @@ The <code>csv_files</code> directory contains <code>train_paper</code>, <code>ev
   <li><strong><code>Gender</code></strong>: Annotator’s self-reported gender (<code>1</code> = Male, <code>2</code> = Female)</li>
   <li><strong><code>Age</code></strong>: Annotator’s age (years)</li>
   <li><strong><code>PVQ21</code>, <code>Big5</code>, <code>MFQ</code></strong>: Psychological traits (Schwartz Theory of Basic Values, Big 5 personality traits, and Moral Foundations) of the annotator</li>
-  <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not) (e.g. For the message 'Do not litter while walking', a 'Yes' habit indicates that the annotator usually does not litter while walking.)</li>
+  <li><strong><code>Habit</code></strong>: Whether the annotator typically performs the behavior expressed by the message (<code>Yes</code> = usually does; <code>No</code> = does not) For example, for the message 'Do not litter while walking', a 'Yes' habit indicates that the annotator usually does not litter while walking.)</li>
   <li><strong><code>Topic</code></strong>: Topic category the image belongs to</li>
  <li><strong><code>Message_ID</code></strong>: Unique identifier for the message.</li>
   <li><strong><code>Message</code></strong>: The persuasive message conveyed by the image</li>
