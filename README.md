@@ -3,7 +3,7 @@
 
 <h1> PVP: An Image Dataset for Personalized Visual Persuasion with Persuasion Strategies, Viewer Characteristics, and Persuasiveness Ratings
 
-![](assets/header.png)
+![](assets/header_new.png)
 
 </div>
  
@@ -12,10 +12,11 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-abs-red)](https://arxiv.org/abs/2506.00481)
 [![PDF](https://img.shields.io/badge/PDF-download-blue)](https://arxiv.org/pdf/2506.00481)
+[![GitHub license](https://img.shields.io/badge/License-MIT-blue)](https://github.com/holi-lab/PVP_Personalized_Visual_Persuasion/blob/main/LICENSE)
+
 
 [![Python Version](https://img.shields.io/badge/Python-3.12-blue.svg)]()
-[![GitHub license](https://img.shields.io/badge/MIT-blue)]()
-
+[![Huggingface Version](https://img.shields.io/badge/Huggingface-Dataset-yellow.svg)](https://huggingface.co/datasets/holi-lab/PVP)
 ![](assets/Data_Construction_flow.png)
 
 </div>
@@ -304,4 +305,3 @@ Please cite our paper if you use the code or data in this repository.
    year={2025}
 }
 ```
-
